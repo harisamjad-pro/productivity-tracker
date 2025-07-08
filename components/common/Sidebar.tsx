@@ -29,8 +29,8 @@ export default function Sidebar() {
     <aside className={`bg-black ${isSidebarOpen ? "min-w-56" : "w-fit"} border-r border-r-neutral-800`}>
       <nav className="text-neutral-500 text-base font-normal grid content-between min-h-dvh px-4 py-4">
         <ul>
-          <li className="flex flex-col gap-12">
-            <Link href="/" className="text-white px-0.5 py-0 w-fit -mt-0.5"><TbAnalyze className="size-10" /></Link>
+          <li className="flex flex-col gap-8">
+            <Link href="/" className="text-white px-0.5 py-0 w-fit -mt-0"><TbAnalyze className="size-10" /></Link>
             <ul className="flex flex-col gap-2">
               {mainData.map((data) => (
                 <li key={data.title}>
